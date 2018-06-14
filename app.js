@@ -72,7 +72,7 @@ function processApifootball(pad, result) {
     let matchs = result.fixtures;
     for (let i=0; i<matchs.length; i++){
         let r = matchs[i];
-        if (r.status !== 'FINISHED') {
+        if (r.status !== 'IN_PLAY') {
             continue;
         }
 
